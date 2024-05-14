@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background: rgb(218,115,21);
+    background: linear-gradient(328deg, rgba(218,115,21,1) 19%, rgba(8,232,137,1) 82%);
+    
+
+}
+
+#canvas{
+    background: rgb(21,176,218);
+    background: linear-gradient(180deg, rgba(21,176,218,1) 19%, rgba(255,255,255,1) 82%);
+    border: 1px solid red;
+    
+}
+
+#myModel{
+    display:none;/*чтобы не отоброжался в начале */
+    position:fixed;/*стоит на месте*/
+    z-index: 1;/*на слой вперёд*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;/*можно прокручивать если потребуеться*/
+    background-color: rgba(0, 0, 0, 0.856);/*чучуть прозрачнее*/
+}
+/*содержимое модели*/
+.model-content{
+    background: rgb(21,176,218);
+    background: linear-gradient(141deg, rgba(21,176,218,1) 19%, rgba(220,8,232,1) 82%);
+    border: 1px solid;
+    margin: 15% auto;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    font-size: 30px;
+}
